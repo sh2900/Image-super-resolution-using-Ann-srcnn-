@@ -1,0 +1,4 @@
+This project utilizes the Super-Resolution Convolutional Neural Network (SRCNN) to upscale low-resolution images while preserving details and reducing artifacts. SRCNN is a deep learning model that enhances image quality through end-to-end learning, making it ideal for applications like medical imaging, surveillance, and satellite image processing.
+For the frontend a user-friendly web interface is built with React.js that allows users to upload images, view results, and compare low-resolution vs. high-resolution outputs.
+The backend is implemented using Node.js, handling image uploads, SRCNN model inference, and serving processed images via REST APIs.
+The frontend communicates with the Node.js backend through API calls. The backend interacts with the SRCNN model (python) to process images and return high-resolution results.

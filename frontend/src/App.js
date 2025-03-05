@@ -86,6 +86,8 @@ function App() {
         Accepted formats: JPEG, PNG, JPG, WebP
       </p>
       {error && <p style={{ color: 'red' }}>{error}</p>}
+      {isLoading && <p style={{ color: "blue" }}>Processing images, please wait...</p>}
+
       
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
         {originalImages.map((originalImage, index) => (
